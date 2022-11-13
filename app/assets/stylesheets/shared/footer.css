@@ -1,0 +1,54 @@
+/******************************************** 
+  フッター 
+*********************************************/
+.foot-wrap {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+}
+
+.foot-wrap .menu-left, .menu-center, .menu-right {
+  display: inline-block;
+  width: auto;
+  margin: 50px auto;
+}
+
+.foot-wrap ul {
+  list-style: none;
+  padding: 0;
+  line-height:40px;
+}
+
+.foot-wrap h3 {
+  border-bottom: 3px solid #2ac5b3;
+  padding: 10px;
+}
+
+.foot-wrap a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.foot-wrap a:hover {
+  color: deeppink;
+}
+
+.foot-wrap .cmark {
+  display: block;
+  padding: 10px;
+  border-top: 1px solid gray;
+  width: 40%;
+  margin: 0 auto;
+  color: gray;
+}
+
+@media screen and (max-width: 400px) {
+  .foot-wrap .menu-left, .menu-center, .menu-right {
+      display: flex;
+      flex-direction: column;
+      width: auto;
+  }
+  .foot-wrap .cpr {
+      display: inline;
+  }
+}

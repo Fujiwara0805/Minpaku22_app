@@ -1,0 +1,94 @@
+/******************************************** 
+  ヘッダー 
+*********************************************/
+header {
+  height: 80px;
+  background-image: url(image1.png);
+  background-size: cover;
+  background-position: center top;
+  background-repeat: no-repeat;
+}
+
+.header-contents {
+  display: flex;
+  justify-content: space-between;
+  height: 80px;
+  padding: 0 20px;
+  align-items: center;
+}
+
+.nav-list {
+  text-align: center;
+  padding: 10px 0;
+  margin: 0 auto;
+  color: #FFFFFF;
+}
+
+.nav-list-item  {
+  list-style: none;
+  display: inline-block;
+  color: #FFFFFF;
+  margin: 0 20px;
+}
+
+.nav-list-item a {
+  text-decoration: none;
+  color: white;
+  font-weight : bolder;
+  font-size: 16px;
+}
+
+.nav-list-item a:hover {
+  color: deeppink;
+}
+
+.logo a {
+  font-size: 35px;
+  letter-spacing: 1.8px;
+  font-family: "Source Sans Pro", Helvetica, Arial, "æ¸¸ã‚´ã‚·ãƒƒã‚¯ä½“", "YuGothic", "ãƒ¡ã‚¤ãƒªã‚ª", "Meiryo", sans-serif;
+  color: white;
+  font-weight : bolder;
+  text-decoration: none;
+}
+
+.logo a:hover {
+  color: deeppink;
+}
+
+.post-button {
+  display: flex;
+  list-style: none;
+  align-items: flex-end;
+}
+
+.post-button a {
+  line-height: 32px;
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.post-button a:hover {
+  color: deeppink;
+}
+
+.shitumon {
+  padding: 10px;
+}
+
+.logout {
+  padding: 10px;
+}
+
+.login {
+  padding: 10px;
+}
+
+.sign-up {
+  padding: 10px;
+}
+
+.input-box{
+  width: 55vw;
+}
