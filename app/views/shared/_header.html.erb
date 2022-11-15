@@ -3,13 +3,14 @@
     <div class='logo'>
       <%= link_to 'Minpaku ', root_path %>
     </div>
-    <div class='post-button'>
+    <div class="nav">
       <% if user_signed_in? %>
-        <%# <%= link_to '投稿', new_room_path, class: "shitumon" %>
-       <%= link_to 'ログアウト', destroy_user_session_path, method: :delete, class: "logout" %>
-       <% else %>
+        <%= link_to 'ログアウト', destroy_user_session_path, method: :delete, class: "logout" %>
+        <%= link_to 'マイページ', "#", class: "mypage" %>
+      <% else %>
+        <%= link_to 'お部屋を掲載する', "#", class: "shitumon" %>
         <%= link_to 'ログイン', new_user_session_path, class: "login" %>
         <%= link_to '新規登録', new_user_registration_path, class: "sign-up" %>
-      <% end %>   
-    </div>
+      <% end %>
+    </div>   
 </header>
