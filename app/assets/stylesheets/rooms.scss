@@ -2,7 +2,7 @@
   ログイン・新規登録画面
 *********************************************/
 body{
-  margin:0;
+  margin:0,auto;
   color:#6a6f8c;
   background:#c8c8c8;
   font:600 16px/18px 'Open Sans',sans-serif;
@@ -165,4 +165,31 @@ a{color:inherit;text-decoration:none}
 }
 .foot-lnk{
   text-align:center;
+}
+/******************************************** 
+  HOME画面
+*********************************************/
+.title {
+  font-family: cursive;
+  text-align: center;
+}
+
+sub-title {
+  font-family: serif;
+}
+
+.cover {
+  height: 100vh;
+  width: 100vw;
+  display: table;
+  background-image: url(/assets/sample1.jpg);
+  background-color:rgba(255,255,255,0.4);
+  background-blend-mode:lighten;
+  background-size: 100% 100%;
+}
+
+.text-center {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
 }
