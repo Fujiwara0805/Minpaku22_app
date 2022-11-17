@@ -13,12 +13,21 @@
 ActiveRecord::Schema.define(version: 2022_11_11_074056) do
 
   create_table "rooms", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8mb4", force: :cascade do |t|
-    t.string "title", null: false
-    t.text "content", null: false
-    t.integer "category_id", null: false
-    t.integer "condition_id", null: false
-    t.integer "prefecture_id", null: false
-    t.integer "price", null: false
+    t.string "home_type"
+    t.string "room_type"
+    t.bigint "accommodate"
+    t.bigint "bed_room"
+    t.bigint "bath_room"
+    t.string "listing_name"
+    t.text "summary"
+    t.string "address"
+    t.boolean "is_tv"
+    t.boolean "is_kitchen"
+    t.boolean "is_air"
+    t.boolean "is_heating"
+    t.boolean "is_internet"
+    t.bigint "price"
+    t.boolean "active", default: false
     t.bigint "user_id", null: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
